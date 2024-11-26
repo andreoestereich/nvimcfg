@@ -30,7 +30,7 @@ local on_attach = function(_, bufnr)
 			update_in_insert = false,
 		}
 	)
-	require('remaps.lsp')
+	--require('remaps.lsp')
 end
 
 -- Setup language servers.
