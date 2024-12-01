@@ -30,7 +30,10 @@ return require('lazy').setup({
   'tpope/vim-commentary',
   'tpope/vim-surround',
 
-  'm4xshen/autoclose.nvim',
+  {'m4xshen/autoclose.nvim',
+  config = {
+  }
+  },
 
   {"nvim-treesitter/nvim-treesitter",
   build = ":TSUpdate",
