@@ -36,7 +36,7 @@ end
 -- Setup language servers.
 local lspconfig = require('lspconfig')
 
-local servers = { 'pyright',  'tsserver', 'lua_ls', 'bashls', 'ccls', 'texlab'}
+local servers = { 'pyright',  'ts_ls', 'lua_ls', 'bashls', 'ccls', 'texlab'}
 for _, lsp in pairs(servers) do
 	lspconfig[lsp].setup {
 		on_attach = on_attach,
