@@ -24,7 +24,8 @@ vim.opt.rtp:prepend(lazypath)
 return require('lazy').setup({
   "EdenEast/nightfox.nvim",
 
-  'bling/vim-airline',
+  {'nvim-lualine/lualine.nvim',
+        dependencies = { 'nvim-tree/nvim-web-devicons' }},
 
   'tpope/vim-fugitive',
   'tpope/vim-commentary',
